@@ -12,10 +12,11 @@
   </head>
   <body>
     <div class="Container my-5 mx-5">
-        <form>
+        <form method="POST" action="/merge" enctype="multipart/form-data">
             <div class="form-group">
               <label for="exampleFormControlFile1">Example file input</label>
-              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              <input type="file" name="pdf" class="form-control-file" id="exampleFormControlFile1" multiple accept=".pdf">
+              <input class="btn btn-primary my-5" type="submit" value="Submit">
             </div>
           </form>
     </div>
