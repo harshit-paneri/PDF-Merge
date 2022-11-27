@@ -9,6 +9,12 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    body {
+      background-color: aqua;
+    }
+  </style>
 
   <title>Merge PDF</title>
 </head>
@@ -16,9 +22,10 @@
 <body>
   <div class="Container my-5 mx-5">
     <form method="post" action="/merge" enctype="multipart/form-data">
-      <h1>Hello, This is a Merge PDF tool </h1>
-      <div class="form-group">
-        <label for="exampleFormControlFile1">Upload PDF</label>
+      <h1 style="text-align: center;">Hello, This is a Merge PDF tool </h1>
+      <hr>
+      <div class="form-group" >
+        <label for="exampleFormControlFile1"><h3>Upload 2 PDF</h3></label>
         <input type="file" name="pdfs" class="form-control-file" id="exampleFormControlFile1" multiple accept=".pdf">
         <input class="btn btn-primary my-5" type="submit" value="Submit">
       </div>
