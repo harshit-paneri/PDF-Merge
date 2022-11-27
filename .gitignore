@@ -1,2 +1,6 @@
 # Node Module File
 /node_modules
+
+/uploads
+
+/public
